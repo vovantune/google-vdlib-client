@@ -1,0 +1,6 @@
+**/node_modules/**
+!appsscript.json
+!*.gs
+!*.js
+!*.ts
+!*.html

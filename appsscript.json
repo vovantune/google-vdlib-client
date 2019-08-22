@@ -1,0 +1,21 @@
+{
+  "timeZone": "Europe/Moscow",
+  "dependencies": {
+    "enabledAdvancedServices": [
+      {
+        "userSymbol": "Drive",
+        "serviceId": "drive",
+        "version": "v2"
+      }
+    ],
+    "libraries": [
+      {
+        "userSymbol": "VDLib",
+        "libraryId": "1dYz56vzZo7UltShnveaF-DV6L0zQQSgF12QynAlHMG4vY6Msqg3ziF-t",
+        "version": "24",
+        "developmentMode": false
+      }
+    ]
+  },
+  "exceptionLogging": "STACKDRIVER"
+}

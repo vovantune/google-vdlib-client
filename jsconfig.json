@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "baseUrl": ".",
+    "paths": {
+      "VDLib/*": [
+        "../VDLib/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
