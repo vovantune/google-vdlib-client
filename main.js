@@ -43,7 +43,7 @@ function doClear() {
  * Первоначальная настройка
  */
 function doSetup() {
-  ScriptApp.newTrigger('onFormSubmit')
+  ScriptApp.newTrigger("onFormSubmit")
     .forSpreadsheet(SpreadsheetApp.getActive())
     .onFormSubmit()
     .create();
@@ -70,6 +70,8 @@ function testFormSubmit() {
       "Дефицит товаров WB": [""],
       "Оборачиваемость товаров WB": [""],
       "Лист ожидания WB": [""],
+      "Заказы для WB в пути": [""],
+      "Остатки на ваших складах": [""]
     }
   });
 }
