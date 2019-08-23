@@ -5,7 +5,8 @@ var UI = new VDLib.UI({
   oneSStore: JSON.parse(scriptProperties.getProperty("oneSStore")),
   showClearButton: scriptProperties.getProperty("showClearButton") == "1",
   exportFields: JSON.parse(scriptProperties.getProperty("exportFields")),
-  hidePredictGroupHeaders: scriptProperties.getProperty("hidePredictGroupHeaders") == "1"
+  hidePredictGroupHeaders: scriptProperties.getProperty("hidePredictGroupHeaders") == "1",
+  debug: scriptProperties.getProperty("debug") == "1"
 });
 
 /** Открытие документа */
