@@ -20,21 +20,21 @@
 ```
 [
     {
-        fieldMap: {barcode: 8, remainsQty: 2},
-        workPageNumber: 1,
-        dataColumnNumber: 1,
-        checkField: {
-            address: "A1",
-            value: "Прайс лист"
+        "fieldMap": {"barcode": 8, "remainsQty": 2},
+        "workPageNumber": 1,
+        "dataColumnNumber": 1,
+        "checkField": {
+            "address": "A1",
+            "value": "Прайс лист"
         }
     },
     {
-        fieldMap: {barcode: 2, remainsQty: 3},
-        workPageNumber: 1,
-        dataColumnNumber: 1,
-        checkField: {
-            address: "B1",
-            value: "ШК"
+        "fieldMap": {"barcode": 2, "remainsQty": 3},
+        "workPageNumber": 1,
+        "dataColumnNumber": 1,
+        "checkField": {
+            "address": "B1",
+            "value": "ШК"
         }
     }
 ]
@@ -42,7 +42,7 @@
 Для описания одного формата: 
 ```
 {
-    fieldMap: {barcode: 2, remainsQty: 3}
+    "fieldMap": {"barcode": 2, "remainsQty": 3}
 }
 ```
 * ```useOneSStore: 1|0``` - Грузить ли остатки из 1С по протоколу OData.
