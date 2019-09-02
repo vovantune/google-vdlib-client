@@ -1,7 +1,7 @@
 var scriptProperties = PropertiesService.getScriptProperties();
 var UI = new VDLib.UI({
-  useOneSStore: scriptProperties.getProperty("useOneSStore") == "1",
   xlsStore: JSON.parse(scriptProperties.getProperty("xlsStore")),
+  useOneSStore: scriptProperties.getProperty("useOneSStore") == "1",
   oneSStore: JSON.parse(scriptProperties.getProperty("oneSStore")),
   showClearButton: scriptProperties.getProperty("showClearButton") == "1",
   exportFields: JSON.parse(scriptProperties.getProperty("exportFields")),
