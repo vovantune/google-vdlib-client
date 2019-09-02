@@ -40,6 +40,16 @@ function doClear() {
   UI.clearAllSheets(SpreadsheetApp.getUi());
 }
 
+/** Отключаем артикул */
+function doDeactivateArticle() {
+  UI.deactivateArticle(SpreadsheetApp.getUi());
+}
+
+/** Активируем артикул */
+function doActivateArticle() {
+  UI.activateArticle(SpreadsheetApp.getUi());
+}
+
 /**
  * Первоначальная настройка
  */
