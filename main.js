@@ -27,9 +27,32 @@ function doFillOneSStore() {
   UI.fillOneSStore(SpreadsheetApp.getUi());
 }
 
-/**
- * Запуск предсказаний
- */
+/** Запуск предсказаний Екатеринбург */
+function doPredictEkb() {
+  UI.predict(SpreadsheetApp.getUi(), VDLib.UISells.STORE_EKB);
+}
+
+/** Запуск предсказаний Краснодар */
+function doPredictKrasnodar() {
+  UI.predict(SpreadsheetApp.getUi(), VDLib.UISells.STORE_KRASNODAR);
+}
+
+/** Запуск предсказаний Новосибирск */
+function doPredictNovosib() {
+  UI.predict(SpreadsheetApp.getUi(), VDLib.UISells.STORE_NOVOSIB);
+}
+
+/** Запуск предсказаний Санкт-Петербург */
+function doPredictSpb() {
+  UI.predict(SpreadsheetApp.getUi(), VDLib.UISells.STORE_SPB);
+}
+
+/** Запуск предсказаний Хабаровск */
+function doPredictKhabarovsk() {
+  UI.predict(SpreadsheetApp.getUi(), VDLib.UISells.STORE_KHABAROVSK);
+}
+
+/** Запуск предсказаний */
 function doPredict() {
   UI.predict(SpreadsheetApp.getUi());
 }
