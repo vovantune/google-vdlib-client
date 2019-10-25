@@ -45,6 +45,9 @@
     "fieldMap": {"barcode": 2, "remainsQty": 3}
 }
 ```
+* ```predictOptions: Object``` - Настройка выдачи прогнозатора:
+    * ```showStoreName: string``` - Показывать ли на странице колонку "Название в 1С".
+    * ```showStoreCode: string``` - Показывать ли на странице колонку "Код в 1С".
 * ```useOneSStore: 1|0``` - Грузить ли остатки из 1С по протоколу OData.
 * ```oneSStore: Object.<string, string>``` - Описание настроек доступа к 1С. Параметры:
     * ```pool: string``` - адрес 1С доступа.

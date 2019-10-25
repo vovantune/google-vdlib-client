@@ -1,6 +1,7 @@
 var scriptProperties = PropertiesService.getScriptProperties();
 var UI = new VDLib.UI({
   xlsStore: JSON.parse(scriptProperties.getProperty("xlsStore")),
+  predictOptions: JSON.parse(scriptProperties.getProperty("predictOptions")),
   xlsInTransit: JSON.parse(scriptProperties.getProperty("xlsInTransit")),
   useOneSStore: scriptProperties.getProperty("useOneSStore") == "1",
   oneSStore: JSON.parse(scriptProperties.getProperty("oneSStore")),
