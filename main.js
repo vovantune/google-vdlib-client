@@ -16,9 +16,7 @@ function onOpen() {
   UI.processOpen(SpreadsheetApp.getUi());
 }
 
-/**
- * Сабмит по форме с файлами
- */
+/** Сабмит по форме с файлами */
 function onFormSubmit(e) {
   UI.processSubmit(e);
 }
@@ -58,9 +56,7 @@ function doPredict() {
   UI.predict(SpreadsheetApp.getUi());
 }
 
-/**
- * Чистим все таблицы с загруженным ранее данными
- */
+/** Чистим все таблицы с загруженным ранее данными */
 function doClear() {
   UI.clearAllSheets(SpreadsheetApp.getUi());
 }
@@ -75,16 +71,6 @@ function doActivateArticle() {
   UI.activateArticle(SpreadsheetApp.getUi());
 }
 
-/**
- * Первоначальная настройка
- */
-function doSetup() {
-  ScriptApp.newTrigger("onFormSubmit")
-    .forSpreadsheet(SpreadsheetApp.getActive())
-    .onFormSubmit()
-    .create();
-}
-
 /** Экспорт расчётов в Excel */
 function doExcelExport() {
   UI.exportToExcel(SpreadsheetApp.getUi());
@@ -93,6 +79,69 @@ function doExcelExport() {
 /** Экспорт расчётов в формате дефицита */
 function doDeficiencyExport() {
   UI.deficiencyExport(SpreadsheetApp.getUi());
+}
+
+/** Дебаг артикулов */
+function doDebugArticles() {
+  UI.debugData("articles");
+}
+
+/** Дебаг остатков */
+function doDebugRemains() {
+  UI.debugData("remains");
+}
+
+/** Дебаг движений */
+function doDebugMovements() {
+  UI.debugData("movements");
+}
+
+/** Дебаг продаж */
+function doDebugSells() {
+  UI.debugData("sells");
+}
+
+/** Дебаг оборачиваемости */
+function doDebugTurnover() {
+  UI.debugData("turnover");
+}
+
+/** Дебаг дефицита */
+function doDebugDeficiency() {
+  UI.debugData("deficiency");
+}
+
+/** Дебаг листа ожидания */
+function doDebugWaitingList() {
+  UI.debugData("waitingList");
+}
+
+/** Дебаг товара в пути */
+function doDebugInTransit() {
+  UI.debugData("inTransit");
+}
+
+/** Дебаг склада 1С */
+function doDebugOneSStore() {
+  UI.debugData("oneSStore");
+}
+
+/** Дебаг дней в продаже */
+function doDebugSellDays() {
+  UI.debugData("sellDays");
+}
+
+/** Дебаг продажные цены и скидки */
+function doDebugSellPrices() {
+  UI.debugData("sellPrices");
+}
+
+/** Первоначальная настройка */
+function doSetup() {
+  ScriptApp.newTrigger("onFormSubmit")
+    .forSpreadsheet(SpreadsheetApp.getActive())
+    .onFormSubmit()
+    .create();
 }
 
 /** Запуск вручную сабмита */
