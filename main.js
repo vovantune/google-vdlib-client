@@ -123,17 +123,7 @@ function doDebugInTransit() {
 
 /** Дебаг склада 1С */
 function doDebugOneSStore() {
-  UI.debugData("oneSStore");
-}
-
-/** Дебаг дней в продаже */
-function doDebugSellDays() {
-  UI.debugData("sellDays");
-}
-
-/** Дебаг продажные цены и скидки */
-function doDebugSellPrices() {
-  UI.debugData("sellPrices");
+  UI.debugData("clientStorage");
 }
 
 /** Первоначальная настройка */
