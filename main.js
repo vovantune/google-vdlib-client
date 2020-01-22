@@ -3,6 +3,7 @@ var UI = new VDLib.UI({
   predictOptions: JSON.parse(scriptProperties.getProperty("predictOptions")),
   showClearButton: scriptProperties.getProperty("showClearButton") == "1",
   exportFields: JSON.parse(scriptProperties.getProperty("exportFields")),
+  customExport: scriptProperties.getProperty("customExport"),
   debug: scriptProperties.getProperty("debug") == "1"
 });
 
