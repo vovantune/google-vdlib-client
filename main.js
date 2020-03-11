@@ -77,6 +77,11 @@ function doDeficiencyExport() {
   UI.deficiencyExport(SpreadsheetApp.getUi());
 }
 
+/** Заполняем поставку на основании остатков на складе */
+function doFillByClientStorage() {
+  UI.fillByClientStorage(SpreadsheetApp.getUi());
+}
+
 /** Дебаг артикулов */
 function doDebugArticles() {
   UI.debugData("articles");
