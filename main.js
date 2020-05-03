@@ -14,7 +14,7 @@ function onOpen() {
 
 /** Сабмит по форме с файлами */
 function onFormSubmit(e) {
-  UI.processSubmit(e);
+  // noop
 }
 
 /** Заполняем склад */
