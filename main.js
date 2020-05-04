@@ -1,10 +1,6 @@
-var scriptProperties = PropertiesService.getScriptProperties();
-var UI = new VDLib.UI({
-  predictOptions: JSON.parse(scriptProperties.getProperty("predictOptions")),
-  showClearButton: scriptProperties.getProperty("showClearButton") == "1",
-  exportFields: JSON.parse(scriptProperties.getProperty("exportFields")),
-  customExport: scriptProperties.getProperty("customExport"),
-  debug: scriptProperties.getProperty("debug") == "1"
+const scriptProperties = PropertiesService.getScriptProperties();
+const UI = VDLib.createUI({
+  showClearButton: scriptProperties.getProperty("showClearButton") == "1"
 });
 
 /** Открытие документа */
@@ -14,7 +10,7 @@ function onOpen() {
 
 /** Сабмит по форме с файлами */
 function onFormSubmit(e) {
-  UI.processSubmit(e);
+  UI._logStatus("Для загрузки отчётов воспользуйтесь новой формой по ссылке выше", UI.STATUS_COLUMNS.articles)
 }
 
 /** Заполняем склад */
@@ -129,25 +125,10 @@ function doDebugOneSStore() {
 
 /** Первоначальная настройка */
 function doSetup() {
-  ScriptApp.newTrigger("onFormSubmit")
-    .forSpreadsheet(SpreadsheetApp.getActive())
-    .onFormSubmit()
-    .create();
+  throw "Deprecated";
 }
 
 /** Запуск вручную сабмита */
 function testFormSubmit() {
-  onFormSubmit({
-    namedValues: {
-      "Вся номенклатура WB": [""],
-      "Остатки товара на складах WB": [""],
-      "Товарные движения WB": [""],
-      "Продажи WB": [""],
-      "Дефицит товаров WB": [""],
-      "Оборачиваемость товаров WB": [""],
-      "Лист ожидания WB": [""],
-      "Заказы для WB в пути": [""],
-      "Остатки на ваших складах": [""]
-    }
-  });
+  throw "Deprecated";
 }
