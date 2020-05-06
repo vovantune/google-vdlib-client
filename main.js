@@ -10,7 +10,7 @@ function onOpen() {
 
 /** Сабмит по форме с файлами */
 function onFormSubmit(e) {
-  UI._logStatus("Для загрузки отчётов воспользуйтесь новой формой по ссылке выше", UI.STATUS_COLUMNS.articles)
+  UI._logStatus("Для загрузки отчётов воспользуйтесь новой формой по ссылке выше", UI.STATUS_COLUMNS.articles);
 }
 
 /** Заполняем склад */
