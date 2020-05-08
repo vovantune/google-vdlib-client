@@ -20,27 +20,27 @@ function doFillOneSStore() {
 
 /** Запуск предсказаний Екатеринбург */
 function doPredictEkb() {
-  UI.predict(SpreadsheetApp.getUi(), VDLib.UISells.STORE_EKB);
+  UI.predict(SpreadsheetApp.getUi(), "Екатеринбург");
 }
 
 /** Запуск предсказаний Краснодар */
 function doPredictKrasnodar() {
-  UI.predict(SpreadsheetApp.getUi(), VDLib.UISells.STORE_KRASNODAR);
+  UI.predict(SpreadsheetApp.getUi(), "Краснодар");
 }
 
 /** Запуск предсказаний Новосибирск */
 function doPredictNovosib() {
-  UI.predict(SpreadsheetApp.getUi(), VDLib.UISells.STORE_NOVOSIB);
+  UI.predict(SpreadsheetApp.getUi(), "Новосибирск");
 }
 
 /** Запуск предсказаний Санкт-Петербург */
 function doPredictSpb() {
-  UI.predict(SpreadsheetApp.getUi(), VDLib.UISells.STORE_SPB);
+  UI.predict(SpreadsheetApp.getUi(), "Санкт-Петербург");
 }
 
 /** Запуск предсказаний Хабаровск */
 function doPredictKhabarovsk() {
-  UI.predict(SpreadsheetApp.getUi(), VDLib.UISells.STORE_KHABAROVSK);
+  UI.predict(SpreadsheetApp.getUi(), "Хабаровск");
 }
 
 /** Запуск предсказаний */
